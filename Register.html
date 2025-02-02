@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+    }
+    #main{
+        background:black ;
+        color: white;
+        width: 300px;
+        border-radius: 15px;
+        margin: auto;
+        padding: 20px;
+    }
+    input{
+        outline: none;
+    }
+    #main:hover{
+        box-shadow: 0 0 15px cyan;
+    }
+</style>
+<body>
+  <div id="main">
+    <div>
+        <h1 align="center"><u>Register Form</u></h1>
+    </div>
+
+    <form id="frm" action="" autocomplete="off">
+        <p><label for="fna">Full Name:</label><span>*</span>
+            <input type="text" id="fna" name="fna" required autofocus>
+          </p>
+
+          <p> <label for="em">Emailid:</label><span>*</span>
+            <input type="email" id="em" name="em">
+          </p>
+
+          <p> <label for="ph">Content Number:</label><span>*</span>
+            <input type="digits" id="ph" name="ph" min="6000000000" max="9999999999" required>
+          </p>
+
+          <p> <label for="dob">Data of Birth:</label><span>*</span>
+            <input type="date" id="dob" name="dob" min="1996-01-01" max="2010-12-31">
+          </p>
+
+          <p> <label for="gn">Gender</label><br>
+            <input type="radio" id="gn" name="gn" value="m" checked><label for="g1">Male</label>&nbsp;
+            <input type="radio" id="g2" name="g2" value="f"><label for="g2">Female</label>&nbsp;
+            <input type="radio" id="g3" name="g3" value="o"><label for="g3">Others</label>
+          </p>
+          <p>
+            <label for="course">Which course?</label>
+            <select id="course" name="course">
+                <option value="">Select course</option>
+                <option value="c">C Language</option>
+                <option value="c+">C++ Language</option>
+                <option value="jfs">JAVA FULLSTOCK</option>
+                <option value="pfs">PYTHON FULLSTOCK</option>
+                <option value="dns">DOT.NET FULLSTOCK</option>
+                <option value="hcs">HTML CSS JAVASCRIPT</option>
+                <option value="aws">AWS DEVELOPER</option>
+            </select>
+          </p>
+
+          <P> <label for="mot">MODE OF TRAINING</label>
+            <select id="mot" name="mot">
+                <option value="ct">Classroom Training</option>
+                <option value="ot">Online Training </option>
+            </select>
+          </P>
+
+          <p align="center">
+            <input type="checkbox" id="tc" name="tc" value="True" required>
+            <label for="tc">I Accepted all terms and conditions</label>
+          </p>
+
+          <p align="center">
+            <button type="submit" id="sb" name="sb">Register Now</button>&nbsp;&nbsp;
+            <button type="reset">Clear Field</button>
+          </p>
+    </form>
+  </div>  
+</body>
+</html>
